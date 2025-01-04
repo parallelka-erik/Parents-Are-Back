@@ -301,6 +301,6 @@ shape = SubResource("RectangleShape2D_k3388")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ReadyToHitArea"]
 shape = SubResource("RectangleShape2D_lc8dy")
 
-[connection signal="body_entered" from="ReadyToHitArea" to="." method="_on_ready_to_hit_area_body_entered"]
 [connection signal="body_entered" from="ReadyToHitArea" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="ReadyToHitArea" to="." method="_on_ready_to_hit_area_body_entered"]
 [connection signal="body_exited" from="ReadyToHitArea" to="." method="_on_ready_to_hit_area_body_exited"]
