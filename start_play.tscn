@@ -1,0 +1,71 @@
+[gd_scene load_steps=6 format=3 uid="uid://bbtw3xayfratf"]
+
+[ext_resource type="Script" path="res://start_play.gd" id="1_eivel"]
+[ext_resource type="Texture2D" uid="uid://dyyxuqn5dt5vk" path="res://Jungle Asset Pack/GIMP-imges-start-anim/1.png" id="2_0kcup"]
+[ext_resource type="Texture2D" uid="uid://rxmqxecypwvv" path="res://Jungle Asset Pack/menu/autors.png" id="3_e22hp"]
+[ext_resource type="Texture2D" uid="uid://cpv6mw0b21h4x" path="res://Jungle Asset Pack/menu/languages.png" id="4_dd27x"]
+[ext_resource type="Texture2D" uid="uid://cwik1rinc2ueo" path="res://Jungle Asset Pack/menu/play.png" id="5_0tp1y"]
+
+[node name="Start Play" type="Node2D"]
+script = ExtResource("1_eivel")
+
+[node name="Play" type="Button" parent="."]
+z_index = 1
+offset_left = 340.0
+offset_top = 46.0
+offset_right = 1078.0
+offset_bottom = 191.0
+theme_override_colors/font_color = Color(0.594909, 0.0601606, 0.299425, 1)
+theme_override_constants/outline_size = 7
+theme_override_font_sizes/font_size = 50
+text = "PLAY"
+
+[node name="Language" type="Button" parent="."]
+visible = false
+offset_left = 343.0
+offset_top = 247.0
+offset_right = 786.0
+offset_bottom = 330.0
+theme_override_colors/font_color = Color(0.596078, 0.0588235, 0.298039, 1)
+theme_override_constants/outline_size = 7
+theme_override_font_sizes/font_size = 50
+text = "LANGUAGE"
+
+[node name="Quit" type="Button" parent="."]
+offset_left = 350.0
+offset_top = 393.0
+offset_right = 794.0
+offset_bottom = 474.0
+theme_override_colors/font_color = Color(0.596078, 0.0588235, 0.298039, 1)
+theme_override_constants/outline_size = 7
+theme_override_font_sizes/font_size = 50
+text = "QUIT"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -100
+texture_repeat = 2
+position = Vector2(583, 319)
+scale = Vector2(0.970442, 0.974476)
+texture = ExtResource("2_0kcup")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(578, 325)
+
+[node name="Autors" type="Sprite2D" parent="."]
+position = Vector2(565, 566)
+scale = Vector2(0.12326, 0.121424)
+texture = ExtResource("3_e22hp")
+
+[node name="Languages" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(562, 271)
+scale = Vector2(0.149099, 0.149099)
+texture = ExtResource("4_dd27x")
+
+[node name="Play2" type="Sprite2D" parent="."]
+position = Vector2(559, 112)
+scale = Vector2(0.152885, 0.152885)
+texture = ExtResource("5_0tp1y")
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

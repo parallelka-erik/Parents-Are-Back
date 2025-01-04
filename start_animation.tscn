@@ -1,0 +1,271 @@
+[gd_scene load_steps=64 format=3 uid="uid://cjnarsgmqma2w"]
+
+[ext_resource type="Script" path="res://start_animation.gd" id="1_jmkkp"]
+[ext_resource type="Texture2D" uid="uid://dyyxuqn5dt5vk" path="res://Jungle Asset Pack/GIMP-imges-start-anim/1.png" id="64_jaa3q"]
+[ext_resource type="Texture2D" uid="uid://c32jpintmfhgg" path="res://Jungle Asset Pack/GIMP-imges-start-anim/2.png" id="65_4jajm"]
+[ext_resource type="Texture2D" uid="uid://b6xdhk2sqc0e6" path="res://Jungle Asset Pack/GIMP-imges-start-anim/3.png" id="66_ex5jj"]
+[ext_resource type="Texture2D" uid="uid://b5lwlubrtinmf" path="res://Jungle Asset Pack/GIMP-imges-start-anim/4.png" id="67_vhny2"]
+[ext_resource type="Texture2D" uid="uid://4ju3tdr0ssfm" path="res://Jungle Asset Pack/GIMP-imges-start-anim/5.png" id="68_6fyxd"]
+[ext_resource type="Texture2D" uid="uid://bh8mgk45e7mb7" path="res://Jungle Asset Pack/GIMP-imges-start-anim/6.png" id="69_3aab0"]
+[ext_resource type="Texture2D" uid="uid://bnyli72somr13" path="res://Jungle Asset Pack/GIMP-imges-start-anim/7.png" id="70_gx60f"]
+[ext_resource type="Texture2D" uid="uid://dbu3rqfr472kn" path="res://Jungle Asset Pack/GIMP-imges-start-anim/8.png" id="71_1p0ug"]
+[ext_resource type="Texture2D" uid="uid://dfubgkfqkcp6c" path="res://Jungle Asset Pack/GIMP-imges-start-anim/9.png" id="72_7oo4e"]
+[ext_resource type="Texture2D" uid="uid://bpan027lc8o4t" path="res://Jungle Asset Pack/GIMP-imges-start-anim/10.png" id="73_87x1r"]
+[ext_resource type="Texture2D" uid="uid://w8d10gkhwh6h" path="res://Jungle Asset Pack/GIMP-imges-start-anim/11.png" id="74_37uhm"]
+[ext_resource type="Texture2D" uid="uid://dx3bgmnaiyk1t" path="res://Jungle Asset Pack/GIMP-imges-start-anim/12.png" id="75_4gcq0"]
+[ext_resource type="Texture2D" uid="uid://c4xv61nbjvxm4" path="res://Jungle Asset Pack/GIMP-imges-start-anim/13.png" id="76_lo0di"]
+[ext_resource type="Texture2D" uid="uid://cdrmgtvm5wb58" path="res://Jungle Asset Pack/GIMP-imges-start-anim/14.png" id="77_vhewe"]
+[ext_resource type="Texture2D" uid="uid://bvat6k5o7hgla" path="res://Jungle Asset Pack/GIMP-imges-start-anim/15.png" id="78_ppbym"]
+[ext_resource type="Texture2D" uid="uid://cv2dv50vm06g2" path="res://Jungle Asset Pack/GIMP-imges-start-anim/16.png" id="79_3b3pi"]
+[ext_resource type="Texture2D" uid="uid://c47l5u7krlm6" path="res://Jungle Asset Pack/GIMP-imges-start-anim/17.png" id="80_5smmb"]
+[ext_resource type="Texture2D" uid="uid://lm014imvcje2" path="res://Jungle Asset Pack/GIMP-imges-start-anim/18.png" id="81_dn4yj"]
+[ext_resource type="Texture2D" uid="uid://47qfad0bty5c" path="res://Jungle Asset Pack/GIMP-imges-start-anim/19.png" id="82_tnuc4"]
+[ext_resource type="Texture2D" uid="uid://cp3fivk55odx" path="res://Jungle Asset Pack/GIMP-imges-start-anim/20.png" id="83_snn0a"]
+[ext_resource type="Texture2D" uid="uid://bcmk4rk5as3tr" path="res://Jungle Asset Pack/GIMP-imges-start-anim/21.png" id="84_cqjoo"]
+[ext_resource type="Texture2D" uid="uid://duajp0pdil40" path="res://Jungle Asset Pack/GIMP-imges-start-anim/22.png" id="85_hk2k7"]
+[ext_resource type="Texture2D" uid="uid://fdvuylccqdc2" path="res://Jungle Asset Pack/GIMP-imges-start-anim/23.png" id="86_7ctd7"]
+[ext_resource type="Texture2D" uid="uid://c8vvne7nxlpur" path="res://Jungle Asset Pack/GIMP-imges-start-anim/24.png" id="87_kaqfy"]
+[ext_resource type="Texture2D" uid="uid://dw1ntujudf0" path="res://Jungle Asset Pack/GIMP-imges-start-anim/25.png" id="88_bv1ca"]
+[ext_resource type="Texture2D" uid="uid://dpfujd2udrrdn" path="res://Jungle Asset Pack/GIMP-imges-start-anim/26.png" id="89_2ddj7"]
+[ext_resource type="Texture2D" uid="uid://cf6m03pcq0l1i" path="res://Jungle Asset Pack/GIMP-imges-start-anim/27.png" id="90_jfk2v"]
+[ext_resource type="Texture2D" uid="uid://dlma3iiuls15v" path="res://Jungle Asset Pack/GIMP-imges-start-anim/28.png" id="91_88jjr"]
+[ext_resource type="Texture2D" uid="uid://hgwgbttburyr" path="res://Jungle Asset Pack/GIMP-imges-start-anim/29.png" id="92_1bxr0"]
+[ext_resource type="Texture2D" uid="uid://5gg1q68n4n0k" path="res://Jungle Asset Pack/GIMP-imges-start-anim/30.png" id="93_21pl4"]
+[ext_resource type="Texture2D" uid="uid://nv56ce0rajax" path="res://Jungle Asset Pack/GIMP-imges-start-anim/31.png" id="94_vnoy7"]
+[ext_resource type="Texture2D" uid="uid://ceushdnyh1glu" path="res://Jungle Asset Pack/GIMP-imges-start-anim/32.png" id="95_xodrw"]
+[ext_resource type="Texture2D" uid="uid://dh3ivkrfrkesf" path="res://Jungle Asset Pack/GIMP-imges-start-anim/33.png" id="96_c77cw"]
+[ext_resource type="Texture2D" uid="uid://ctmy5p6y52v07" path="res://Jungle Asset Pack/GIMP-imges-start-anim/34.png" id="97_m3y54"]
+[ext_resource type="Texture2D" uid="uid://gvdqn8dxj1da" path="res://Jungle Asset Pack/GIMP-imges-start-anim/35.png" id="98_64lfi"]
+[ext_resource type="Texture2D" uid="uid://cm3k72dx7hknp" path="res://Jungle Asset Pack/GIMP-imges-start-anim/36.png" id="99_lfffl"]
+[ext_resource type="Texture2D" uid="uid://0fhemgcussye" path="res://Jungle Asset Pack/GIMP-imges-start-anim/37.png" id="100_c7hkr"]
+[ext_resource type="Texture2D" uid="uid://b7la2olirmr28" path="res://Jungle Asset Pack/GIMP-imges-start-anim/38.png" id="101_hgrav"]
+[ext_resource type="Texture2D" uid="uid://vviq064vhbg0" path="res://Jungle Asset Pack/GIMP-imges-start-anim/39.png" id="102_n4vks"]
+[ext_resource type="Texture2D" uid="uid://horhs8etma0s" path="res://Jungle Asset Pack/GIMP-imges-start-anim/40.png" id="103_xflvv"]
+[ext_resource type="Texture2D" uid="uid://bwwxhmk24qbyu" path="res://Jungle Asset Pack/GIMP-imges-start-anim/41.png" id="104_hkl7j"]
+[ext_resource type="Texture2D" uid="uid://cc00lyrlmxuby" path="res://Jungle Asset Pack/GIMP-imges-start-anim/42.png" id="105_sq1kf"]
+[ext_resource type="Texture2D" uid="uid://bs0d8j8pk634a" path="res://Jungle Asset Pack/GIMP-imges-start-anim/43.png" id="106_mb8iu"]
+[ext_resource type="Texture2D" uid="uid://24jouqhmea5p" path="res://Jungle Asset Pack/GIMP-imges-start-anim/44.png" id="107_gay0c"]
+[ext_resource type="Texture2D" uid="uid://denvt45i3uu64" path="res://Jungle Asset Pack/GIMP-imges-start-anim/45.png" id="108_dh8jg"]
+[ext_resource type="Texture2D" uid="uid://dr137wkb54s3w" path="res://Jungle Asset Pack/GIMP-imges-start-anim/46.png" id="109_c653m"]
+[ext_resource type="Texture2D" uid="uid://bjywgs82alroi" path="res://Jungle Asset Pack/GIMP-imges-start-anim/47.png" id="110_5yyl5"]
+[ext_resource type="Texture2D" uid="uid://7upty84t6c74" path="res://Jungle Asset Pack/GIMP-imges-start-anim/48.png" id="111_wx8pu"]
+[ext_resource type="Texture2D" uid="uid://dfv46pv7huu22" path="res://Jungle Asset Pack/GIMP-imges-start-anim/49.png" id="112_jbwlk"]
+[ext_resource type="Texture2D" uid="uid://cdw24jmw223wp" path="res://Jungle Asset Pack/GIMP-imges-start-anim/50.png" id="113_g5lx5"]
+[ext_resource type="Texture2D" uid="uid://c0khfxbmivnq3" path="res://Jungle Asset Pack/GIMP-imges-start-anim/51.png" id="114_q03pb"]
+[ext_resource type="Texture2D" uid="uid://bhkh7n1ln66u0" path="res://Jungle Asset Pack/GIMP-imges-start-anim/52.png" id="115_fod6b"]
+[ext_resource type="Texture2D" uid="uid://u6b7hsqabiwm" path="res://Jungle Asset Pack/GIMP-imges-start-anim/53.png" id="116_6w7jp"]
+[ext_resource type="Texture2D" uid="uid://ged216th5dwf" path="res://Jungle Asset Pack/GIMP-imges-start-anim/54.png" id="117_i31m5"]
+[ext_resource type="Texture2D" uid="uid://cqpn4d7nb5j2u" path="res://Jungle Asset Pack/GIMP-imges-start-anim/55.png" id="118_jpcj4"]
+[ext_resource type="Texture2D" uid="uid://c301vv51c53n3" path="res://Jungle Asset Pack/GIMP-imges-start-anim/56.png" id="119_nb7d4"]
+[ext_resource type="Texture2D" uid="uid://rcebipf0iin3" path="res://Jungle Asset Pack/GIMP-imges-start-anim/57.png" id="120_mkrxp"]
+[ext_resource type="Texture2D" uid="uid://0jftyr452xtj" path="res://Jungle Asset Pack/GIMP-imges-start-anim/59.png" id="121_ludk1"]
+[ext_resource type="Texture2D" uid="uid://cyfysml8e8boo" path="res://Jungle Asset Pack/GIMP-imges-start-anim/60.png" id="122_8unuw"]
+[ext_resource type="Texture2D" uid="uid://cxif0wlg1siqm" path="res://Jungle Asset Pack/GIMP-imges-start-anim/61.png" id="123_cd0jp"]
+[ext_resource type="Texture2D" uid="uid://d4k88hh4iyuio" path="res://Jungle Asset Pack/GIMP-imges-start-anim/62.png" id="124_rqyrl"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3qwex"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("64_jaa3q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_4jajm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_ex5jj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_vhny2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_6fyxd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_3aab0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_gx60f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_1p0ug")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_7oo4e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_87x1r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_37uhm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_4gcq0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_lo0di")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_vhewe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_ppbym")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_3b3pi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_5smmb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_dn4yj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_tnuc4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_snn0a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_cqjoo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_hk2k7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_7ctd7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_kaqfy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_bv1ca")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_2ddj7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_jfk2v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_88jjr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_1bxr0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_21pl4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_vnoy7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_xodrw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_c77cw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_m3y54")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_64lfi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_lfffl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_c7hkr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_hgrav")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_n4vks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_xflvv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_hkl7j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_sq1kf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_mb8iu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_gay0c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_dh8jg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_c653m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_5yyl5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_wx8pu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_jbwlk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_g5lx5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_q03pb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_fod6b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_6w7jp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_i31m5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_jpcj4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_jpcj4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_nb7d4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_mkrxp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_ludk1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_8unuw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_cd0jp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_rqyrl")
+}],
+"loop": false,
+"name": &"Play2",
+"speed": 15.0
+}]
+
+[node name="start_animation" type="Node2D"]
+script = ExtResource("1_jmkkp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1027.23, 655.749)
+scale = Vector2(1.0055, 1.0055)
+sprite_frames = SubResource("SpriteFrames_3qwex")
+animation = &"Play2"
+autoplay = "Play2"
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="ready" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_ready"]
