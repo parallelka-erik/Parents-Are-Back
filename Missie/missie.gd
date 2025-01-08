@@ -6,7 +6,7 @@ var current_health = max_health
 @onready var health_bar = $Control/ProgressBarHealth
 var mom_is_here = false;
 var moms_in_area = [];
-
+@onready var current_shot_position = $ShotArea/CollisionShape2D;
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -500.0
@@ -38,10 +38,11 @@ func take_damage(damage):
 		current_health = 0
 	health_bar.value = current_health
 
-func _process(delta): 
+func _process(delta):
+		
 	if mom_is_here and Input.is_action_pressed("shot"): 
 		for obj in moms_in_area:
-			obj.anim.play('Hurt');
+			obj.alive = false;
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -67,8 +68,10 @@ func _physics_process(delta: float) -> void:
 			anim.play("Idle")
 	if direction == -1:
 		anim.flip_h = true;
+		current_shot_position.position.x = -abs(current_shot_position.position.x);
 	elif direction == 1:
 		anim.flip_h = false;
+		current_shot_position.position.x = abs(current_shot_position.position.x);
 		
 	if velocity.y > 400:
 		anim.play("Fall");

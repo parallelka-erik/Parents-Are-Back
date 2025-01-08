@@ -2477,7 +2477,8 @@ texture = ExtResource("3_tqxku")
 167:136/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_j4fub"]
-physics_layer_0/collision_layer = 1
+physics_layer_0/collision_layer = 8
+physics_layer_0/collision_mask = 8
 sources/0 = SubResource("TileSetAtlasSource_ut6ns")
 sources/2 = SubResource("TileSetAtlasSource_8ykqn")
 
@@ -2530,7 +2531,7 @@ layer_0/tile_data = PackedInt32Array(2359296, 1310720, 9, 2359297, 1376256, 9, 2
 z_index = 2
 
 [node name="Spawner" type="Timer" parent="Mobs"]
-wait_time = 5.0
+wait_time = 3.0
 autostart = true
 
 [node name="Player" type="Node2D" parent="."]
@@ -2548,6 +2549,7 @@ z_index = 1
 texture = ExtResource("5_gfhyf")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Boxes/BoxGrafic"]
+collision_layer = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Boxes/BoxGrafic/StaticBody2D"]
 position = Vector2(-16.627, 42.8535)
@@ -2560,6 +2562,7 @@ scale = Vector2(1.0272, 0.966395)
 texture = ExtResource("5_gfhyf")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Boxes/BoxGrafic3"]
+collision_layer = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Boxes/BoxGrafic3/StaticBody2D"]
 position = Vector2(-24.625, 34.874)
@@ -2572,6 +2575,7 @@ scale = Vector2(1.01351, 0.983054)
 texture = ExtResource("5_gfhyf")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Boxes/BoxGrafic2"]
+collision_layer = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Boxes/BoxGrafic2/StaticBody2D"]
 position = Vector2(-24.625, 34.874)

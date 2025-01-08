@@ -12,7 +12,8 @@ var is_close_to_player = false;
 
 func hit_and_hit():
 	await $AnimatedSprite2D.animation_finished;
-	player.take_damage(damage)
+	if alive == true:
+		player.take_damage(damage)
 	hit_and_hit();
 	
 func _on_ready_to_hit_area_body_entered(body):
@@ -20,13 +21,29 @@ func _on_ready_to_hit_area_body_entered(body):
 	if body.name == "Missie":
 		hit_and_hit();
 
-
+func mob_dies():
+	collision_mask = 0
+	collision_layer = 0;
+	collision_mask |= (1 << 3)
+	velocity.x = 0;
+	anim.play("Hurt");
+	await anim.animation_finished;
+	queue_free();
 		
 		
 
 
 func _physics_process(delta: float) -> void:
+	if alive == false:
+		mob_dies();
+		
 	# Add the gravity.
+	if player.current_health == 0:
+		anim.flip_h = false;
+		anim.play("Idle");
+		await anim.animation_finished;
+
+
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 	var direction_chase = (player.position - self.position).normalized()

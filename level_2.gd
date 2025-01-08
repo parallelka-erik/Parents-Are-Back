@@ -14,14 +14,15 @@ func _process(delta: float) -> void:
 
 
 func _on_spawner_timeout():
-	mom_spawn();
+	if player.current_health != 0:
+		mom_spawn();
 
 func mom_spawn():
 	var randomX;
-	if int(randf_range(0, 100)) % 2 == 0:
-		randomX = player.position.x - 600
+	if int(randf_range (0, 100)) % 2 == 0:
+		randomX = player.position.x - 1600
 	else:
-		randomX = player.position.x + 600
+		randomX = player.position.x + 1600
 	var mom = momPreload.instantiate();
 	mom.position = Vector2(randomX, 570)
 	$Mobs.add_child(mom);

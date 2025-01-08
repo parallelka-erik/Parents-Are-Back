@@ -368,9 +368,10 @@ radius = 22.0
 height = 92.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5eya7"]
-size = Vector2(171.875, 92)
+size = Vector2(166, 92)
 
 [node name="Missie" type="CharacterBody2D"]
+collision_mask = 15
 script = ExtResource("1_lt1o1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -408,10 +409,12 @@ offset_right = 4.0
 offset_bottom = 27.0
 
 [node name="ShotArea" type="Area2D" parent="."]
+collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShotArea"]
-position = Vector2(-85.9375, 0)
+position = Vector2(-83, 0)
 shape = SubResource("RectangleShape2D_5eya7")
+one_way_collision_margin = 0.0
 
 [connection signal="body_entered" from="ShotArea" to="." method="_on_shot_area_body_entered"]
 [connection signal="body_exited" from="ShotArea" to="." method="_on_shot_area_body_exited"]

@@ -277,6 +277,8 @@ size = Vector2(42, 68)
 size = Vector2(88, 33)
 
 [node name="Mom" type="CharacterBody2D" groups=["Enemy"]]
+collision_layer = 2
+collision_mask = 9
 script = ExtResource("1_0btno")
 
 [node name="Mom_sees" type="Area2D" parent="."]
