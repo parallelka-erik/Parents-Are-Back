@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://dyty1c6kv1jqf"]
+[gd_scene load_steps=30 format=3 uid="uid://dyty1c6kv1jqf"]
 
 [ext_resource type="Script" path="res://level_2.gd" id="1_i6ayy"]
 [ext_resource type="PackedScene" uid="uid://c8hakesyos7gw" path="res://Missie/missie.tscn" id="1_xnle4"]
@@ -2482,6 +2482,9 @@ physics_layer_0/collision_mask = 8
 sources/0 = SubResource("TileSetAtlasSource_ut6ns")
 sources/2 = SubResource("TileSetAtlasSource_8ykqn")
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_p1j03"]
+radius = 1197.24
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h6chx"]
 size = Vector2(1596.13, 805.651)
 
@@ -2539,6 +2542,34 @@ autostart = true
 [node name="Missie" parent="Player" instance=ExtResource("1_xnle4")]
 z_index = 2
 position = Vector2(285, 512)
+
+[node name="Gun Reload Areas" type="Node2D" parent="."]
+position = Vector2(0, 550)
+scale = Vector2(0.0601456, 0.0583379)
+
+[node name="ReloadArea3" type="Area2D" parent="Gun Reload Areas"]
+position = Vector2(-6118.49, 754.227)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Gun Reload Areas/ReloadArea3"]
+position = Vector2(65757.1, -702.802)
+shape = SubResource("CircleShape2D_p1j03")
+one_way_collision_margin = 0.0
+
+[node name="ReloadArea2" type="Area2D" parent="Gun Reload Areas"]
+position = Vector2(-3059.24, 377.113)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Gun Reload Areas/ReloadArea2"]
+position = Vector2(41083.6, -325.689)
+shape = SubResource("CircleShape2D_p1j03")
+one_way_collision_margin = 0.0
+
+[node name="ReloadArea" type="Area2D" parent="Gun Reload Areas"]
+position = Vector2(-1529.62, 188.557)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Gun Reload Areas/ReloadArea"]
+position = Vector2(18837.6, -154.274)
+shape = SubResource("CircleShape2D_p1j03")
+one_way_collision_margin = 0.0
 
 [node name="Boxes" type="Node2D" parent="."]
 position = Vector2(1042, 550)
@@ -3457,3 +3488,9 @@ scale = Vector2(0.0843916, 0.0843923)
 texture = ExtResource("12_70qpu")
 
 [connection signal="timeout" from="Mobs/Spawner" to="." method="_on_spawner_timeout"]
+[connection signal="body_entered" from="Gun Reload Areas/ReloadArea3" to="." method="_on_reload_area_3_body_entered"]
+[connection signal="body_exited" from="Gun Reload Areas/ReloadArea3" to="." method="_on_reload_area_3_body_exited"]
+[connection signal="body_entered" from="Gun Reload Areas/ReloadArea2" to="." method="_on_reload_area_2_body_entered"]
+[connection signal="body_exited" from="Gun Reload Areas/ReloadArea2" to="." method="_on_reload_area_2_body_exited"]
+[connection signal="body_entered" from="Gun Reload Areas/ReloadArea" to="." method="_on_reload_area_body_entered"]
+[connection signal="body_exited" from="Gun Reload Areas/ReloadArea" to="." method="_on_reload_area_body_exited"]
