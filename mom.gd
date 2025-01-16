@@ -14,7 +14,7 @@ var is_close_to_player = false;
 func throw_bottle(enemy):
 	enemy.anim.play('Attack');
 	await enemy.anim.animation_finished;
-	print('кинул');
+	
 
 func hit_and_hit():
 	await $AnimatedSprite2D.animation_finished;
@@ -54,25 +54,36 @@ func _physics_process(delta: float) -> void:
 		velocity += get_gravity() * delta
 	var direction_chase = (player.position - self.position).normalized()
 	var direction_val = player.position - self.position;
-	if alive:
-		if player.position.y < 450:
-			ready_to_throw = true;
-			throw_bottle(self);
-		else:
-			ready_to_throw = false;
+	
+	if player.position.y < 450:
+		ready_to_throw = true;
+	else:
+		ready_to_throw = false;
+	
+	if alive and ready_to_throw:
+		throw_bottle(self);
+		if abs(direction_val.x) > 300:
+			velocity.x = direction_chase.x * SPEED;
+		if abs(direction_val.x) <= 300 and abs(direction_val.y) > 20:
+			velocity.x = 0;
+	
 	if alive and !ready_to_throw:
+		if abs(direction_val.x) > 50:
+			anim.play("Run");
+			velocity.x = direction_chase.x * SPEED;
+		if abs(direction_val.x) <= 50 and abs(direction_val.y) < 20:
+			anim.play("Attack");
+		if abs(direction_val.x) <= 50 and abs(direction_val.y) > 20:
+			anim.play("Idle");
+			velocity.x = 0;
+			
+	
+	if alive:
 		if direction_val.x < 0:
 			anim.flip_h = true;
 		elif direction_val.x > 0:
 			anim.flip_h = false;
-		if abs(direction_val.x) > 50:
-			velocity.x = direction_chase.x * SPEED;
-			anim.play("Run");
-		if abs(direction_val.x) <= 50 and abs(direction_val.y) < 20:
-			anim.play("Attack");
-		if abs(direction_val.x) <= 50 and abs(direction_val.y) > 20:
-			velocity.x = 0;
-			anim.play("Idle");
+		
 			
 
 	
