@@ -1,0 +1,48 @@
+[gd_scene load_steps=8 format=3 uid="uid://du1h8vlkv7o2x"]
+
+[ext_resource type="Script" path="res://bottle.gd" id="1_y3jlp"]
+[ext_resource type="Texture2D" uid="uid://b2l77iymm7b2b" path="res://Jungle Asset Pack/Sprites Samurai/DB2_U.png" id="2_xwf6y"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ygdge"]
+radius = 13.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8wc2j"]
+atlas = ExtResource("2_xwf6y")
+region = Rect2(0, 80, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o1nkv"]
+atlas = ExtResource("2_xwf6y")
+region = Rect2(16, 80, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dnxus"]
+atlas = ExtResource("2_xwf6y")
+region = Rect2(32, 80, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6fv7w"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8wc2j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o1nkv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dnxus")
+}],
+"loop": true,
+"name": &"Fly",
+"speed": 5.0
+}]
+
+[node name="Bottle" type="RigidBody2D"]
+script = ExtResource("1_y3jlp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ygdge")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_6fv7w")
+animation = &"Fly"
+autoplay = "Fly"
+frame_progress = 0.777296

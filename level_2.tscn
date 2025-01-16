@@ -2534,7 +2534,6 @@ layer_0/tile_data = PackedInt32Array(2359296, 1310720, 9, 2359297, 1376256, 9, 2
 z_index = 2
 
 [node name="Spawner" type="Timer" parent="Mobs"]
-wait_time = 3.0
 autostart = true
 
 [node name="Player" type="Node2D" parent="."]
@@ -3256,7 +3255,7 @@ shape = SubResource("RectangleShape2D_64xmp")
 position = Vector2(3101, 95)
 
 [node name="Sprite2D" type="Sprite2D" parent="Physic Sticks/Stick_13"]
-position = Vector2(2.57492e-05, 9)
+position = Vector2(2.57492e-05, 36)
 scale = Vector2(0.053756, 0.053756)
 texture = ExtResource("11_1iq6j")
 
@@ -3264,6 +3263,7 @@ texture = ExtResource("11_1iq6j")
 position = Vector2(36, -18)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Physic Sticks/Stick_13/StaticBody2D"]
+position = Vector2(0, 29)
 shape = SubResource("SegmentShape2D_buvh4")
 
 [node name="Stick_10" type="Node2D" parent="Physic Sticks"]

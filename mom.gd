@@ -6,9 +6,15 @@ const JUMP_VELOCITY = -450.0
 @onready var player = $"../../Player/Missie"
 @onready var anim = $AnimatedSprite2D;
 var alive = true
+var ready_to_throw = false
 var attack_process = false;
-var damage = 10 
+var damage = 25;
 var is_close_to_player = false;
+
+func throw_bottle(enemy):
+	enemy.anim.play('Attack');
+	await enemy.anim.animation_finished;
+	print('кинул');
 
 func hit_and_hit():
 	await $AnimatedSprite2D.animation_finished;
@@ -43,12 +49,18 @@ func _physics_process(delta: float) -> void:
 		anim.play("Idle");
 		await anim.animation_finished;
 
-
+	
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 	var direction_chase = (player.position - self.position).normalized()
 	var direction_val = player.position - self.position;
-	if alive == true:
+	if alive:
+		if player.position.y < 450:
+			ready_to_throw = true;
+			throw_bottle(self);
+		else:
+			ready_to_throw = false;
+	if alive and !ready_to_throw:
 		if direction_val.x < 0:
 			anim.flip_h = true;
 		elif direction_val.x > 0:

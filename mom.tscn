@@ -171,7 +171,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"Attack",
-"speed": 10.0
+"speed": 20.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -290,9 +290,9 @@ shape = SubResource("CircleShape2D_gug6l")
 position = Vector2(-1, -26)
 scale = Vector2(1.82483, 1.82483)
 sprite_frames = SubResource("SpriteFrames_cm6h5")
-animation = &"Hurt"
+animation = &"Attack"
 autoplay = "Idle"
-frame = 7
+frame = 6
 frame_progress = 1.0
 
 [node name="Physics_Shape" type="CollisionShape2D" parent="."]
@@ -303,6 +303,6 @@ shape = SubResource("RectangleShape2D_k3388")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ReadyToHitArea"]
 shape = SubResource("RectangleShape2D_lc8dy")
 
-[connection signal="body_entered" from="ReadyToHitArea" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="ReadyToHitArea" to="." method="_on_ready_to_hit_area_body_entered"]
+[connection signal="body_entered" from="ReadyToHitArea" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="ReadyToHitArea" to="." method="_on_ready_to_hit_area_body_exited"]
